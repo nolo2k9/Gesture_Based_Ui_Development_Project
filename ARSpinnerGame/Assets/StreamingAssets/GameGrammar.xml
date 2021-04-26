@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<grammar xml:lang="en-US" mode="voice" 
+root="controls" tag-format="semantics/1.0" version="1.0"
+xmlns="http://www.w3.org/2001/06/grammar">
+
+  <rule id="controls">
+    <one-of>
+      <item>
+        <ruleref uri="#directions"/>
+      </item>
+  </rule>
+
+  <rule id="directions">
+  <one-of>
+    <item>go left</item>
+    <item>left</item>
+    <item>move left</item>
+    <item>go right</item>
+    <item>right</item>
+    <item>move right</item>
+    <item>stop</item>
+    <item>stop moving</item>
+  </one-of>
+  </rule>
+</grammar>
